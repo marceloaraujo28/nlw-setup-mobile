@@ -44,15 +44,15 @@ export function HabitDay({
           amountAccomplisheadPercentage > 0 &&
           amountAccomplisheadPercentage < 20,
         ["bg-violet-800 bg-violet-600"]:
-          amountAccomplisheadPercentage > 20 &&
+          amountAccomplisheadPercentage >= 20 &&
           amountAccomplisheadPercentage < 40,
         ["bg-violet-700 bg-violet-500"]:
-          amountAccomplisheadPercentage > 40 &&
+          amountAccomplisheadPercentage >= 40 &&
           amountAccomplisheadPercentage < 60,
         ["bg-violet-600 bg-violet-500"]:
-          amountAccomplisheadPercentage > 60 &&
+          amountAccomplisheadPercentage >= 60 &&
           amountAccomplisheadPercentage < 80,
-        ["bg-violet-500 bg-violet-400"]: amountAccomplisheadPercentage > 80,
+        ["bg-violet-500 bg-violet-400"]: amountAccomplisheadPercentage >= 80,
         ["border-white border-4"]: isCurrentDay,
       })}
       style={{
